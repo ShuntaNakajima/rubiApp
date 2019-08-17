@@ -8,14 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		355DB13AE2D07CCB35BEDC41 /* Pods_RubiApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F035A57545A5C31D5366CF01 /* Pods_RubiApp.framework */; };
+		A5F5173BB71C521E3CC382E7 /* Pods_RubiAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9F20821AA55A9605C967F8 /* Pods_RubiAppTests.framework */; };
 		BC945B782307D88400809452 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC945B772307D88400809452 /* AppDelegate.swift */; };
 		BC945B7F2307D88500809452 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC945B7E2307D88500809452 /* Assets.xcassets */; };
 		BC945B822307D88500809452 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC945B802307D88500809452 /* LaunchScreen.storyboard */; };
 		BC95CD9B2307EEE700550A9E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95CD9A2307EEE700550A9E /* MainViewController.swift */; };
 		BC95CD9D2307F09100550A9E /* MainViewControllerReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95CD9C2307F09100550A9E /* MainViewControllerReactor.swift */; };
+		BC95CDB4230800F900550A9E /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95CDA32307FDEC00550A9E /* NetworkTests.swift */; };
+		BCAD1DB923080B4F00C264D5 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAD1DB823080B4F00C264D5 /* Request.swift */; };
+		BCAD1DBD2308132800C264D5 /* WordEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAD1DBC2308132800C264D5 /* WordEntity.swift */; };
+		BCAD1DBF23083A1B00C264D5 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAD1DBE23083A1B00C264D5 /* APIKey.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BC95CDAF230800F100550A9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC945B6C2307D88400809452 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC945B732307D88400809452;
+			remoteInfo = RubiApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0F9F20821AA55A9605C967F8 /* Pods_RubiAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RubiAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		298AB9BA18A1FF4712EF529D /* Pods-RubiAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RubiAppTests.debug.xcconfig"; path = "Target Support Files/Pods-RubiAppTests/Pods-RubiAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		533FC52C3999107541A911C4 /* Pods-RubiAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RubiAppTests.release.xcconfig"; path = "Target Support Files/Pods-RubiAppTests/Pods-RubiAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		BC945B742307D88400809452 /* RubiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RubiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC945B772307D88400809452 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC945B7E2307D88500809452 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -23,6 +41,12 @@
 		BC945B832307D88500809452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC95CD9A2307EEE700550A9E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BC95CD9C2307F09100550A9E /* MainViewControllerReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerReactor.swift; sourceTree = "<group>"; };
+		BC95CDA32307FDEC00550A9E /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
+		BC95CDAA230800F100550A9E /* RubiAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RubiAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC95CDAE230800F100550A9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCAD1DB823080B4F00C264D5 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		BCAD1DBC2308132800C264D5 /* WordEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordEntity.swift; sourceTree = "<group>"; };
+		BCAD1DBE23083A1B00C264D5 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		C7AF2447810D9B21B8F8FCF0 /* Pods-RubiApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RubiApp.release.xcconfig"; path = "Target Support Files/Pods-RubiApp/Pods-RubiApp.release.xcconfig"; sourceTree = "<group>"; };
 		F035A57545A5C31D5366CF01 /* Pods_RubiApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RubiApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF087A3108CF65D3297616F /* Pods-RubiApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RubiApp.debug.xcconfig"; path = "Target Support Files/Pods-RubiApp/Pods-RubiApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -37,6 +61,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC95CDA7230800F100550A9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5F5173BB71C521E3CC382E7 /* Pods_RubiAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -45,6 +77,8 @@
 			children = (
 				FFF087A3108CF65D3297616F /* Pods-RubiApp.debug.xcconfig */,
 				C7AF2447810D9B21B8F8FCF0 /* Pods-RubiApp.release.xcconfig */,
+				298AB9BA18A1FF4712EF529D /* Pods-RubiAppTests.debug.xcconfig */,
+				533FC52C3999107541A911C4 /* Pods-RubiAppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -53,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				F035A57545A5C31D5366CF01 /* Pods_RubiApp.framework */,
+				0F9F20821AA55A9605C967F8 /* Pods_RubiAppTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -61,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				BC945B762307D88400809452 /* RubiApp */,
+				BC95CDAB230800F100550A9E /* RubiAppTests */,
 				BC945B752307D88400809452 /* Products */,
 				825E8D55BE759A146AA3FD84 /* Pods */,
 				96BA07B4CB0278A67571B2BE /* Frameworks */,
@@ -71,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				BC945B742307D88400809452 /* RubiApp.app */,
+				BC95CDAA230800F100550A9E /* RubiAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +115,7 @@
 		BC945B762307D88400809452 /* RubiApp */ = {
 			isa = PBXGroup;
 			children = (
+				BCAD1DBA2308130700C264D5 /* Domain */,
 				BC95CDA02307F6F500550A9E /* Resources */,
 				BC95CD9F2307F6D800550A9E /* Utilities */,
 				BC945B8D2307DB8300809452 /* Networking */,
@@ -109,6 +147,8 @@
 		BC945B8D2307DB8300809452 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				BCAD1DB823080B4F00C264D5 /* Request.swift */,
+				BCAD1DBE23083A1B00C264D5 /* APIKey.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -126,6 +166,31 @@
 				BC945B7E2307D88500809452 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		BC95CDAB230800F100550A9E /* RubiAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC95CDA32307FDEC00550A9E /* NetworkTests.swift */,
+				BC95CDAE230800F100550A9E /* Info.plist */,
+			);
+			path = RubiAppTests;
+			sourceTree = "<group>";
+		};
+		BCAD1DBA2308130700C264D5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				BCAD1DBB2308130C00C264D5 /* Entity */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		BCAD1DBB2308130C00C264D5 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				BCAD1DBC2308132800C264D5 /* WordEntity.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +215,25 @@
 			productReference = BC945B742307D88400809452 /* RubiApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BC95CDA9230800F100550A9E /* RubiAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC95CDB3230800F100550A9E /* Build configuration list for PBXNativeTarget "RubiAppTests" */;
+			buildPhases = (
+				2EB9A4D2A1B1285E6B92CCA3 /* [CP] Check Pods Manifest.lock */,
+				BC95CDA6230800F100550A9E /* Sources */,
+				BC95CDA7230800F100550A9E /* Frameworks */,
+				BC95CDA8230800F100550A9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC95CDB0230800F100550A9E /* PBXTargetDependency */,
+			);
+			name = RubiAppTests;
+			productName = RubiAppTests;
+			productReference = BC95CDAA230800F100550A9E /* RubiAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -162,6 +246,10 @@
 				TargetAttributes = {
 					BC945B732307D88400809452 = {
 						CreatedOnToolsVersion = 10.3;
+					};
+					BC95CDA9230800F100550A9E = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = BC945B732307D88400809452;
 					};
 				};
 			};
@@ -179,6 +267,7 @@
 			projectRoot = "";
 			targets = (
 				BC945B732307D88400809452 /* RubiApp */,
+				BC95CDA9230800F100550A9E /* RubiAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -193,9 +282,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC95CDA8230800F100550A9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2EB9A4D2A1B1285E6B92CCA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RubiAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		491EEB0497381A283C4AD5AF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,13 +360,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCAD1DBD2308132800C264D5 /* WordEntity.swift in Sources */,
 				BC945B782307D88400809452 /* AppDelegate.swift in Sources */,
+				BCAD1DB923080B4F00C264D5 /* Request.swift in Sources */,
 				BC95CD9B2307EEE700550A9E /* MainViewController.swift in Sources */,
+				BCAD1DBF23083A1B00C264D5 /* APIKey.swift in Sources */,
 				BC95CD9D2307F09100550A9E /* MainViewControllerReactor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC95CDA6230800F100550A9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC95CDB4230800F900550A9E /* NetworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC95CDB0230800F100550A9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC945B732307D88400809452 /* RubiApp */;
+			targetProxy = BC95CDAF230800F100550A9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BC945B802307D88500809452 /* LaunchScreen.storyboard */ = {
@@ -297,6 +434,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -358,6 +496,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -418,6 +557,48 @@
 			};
 			name = Release;
 		};
+		BC95CDB1230800F100550A9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 298AB9BA18A1FF4712EF529D /* Pods-RubiAppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XNNJ64W9XB;
+				INFOPLIST_FILE = RubiAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuntanakajima.RubiAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RubiApp.app/RubiApp";
+			};
+			name = Debug;
+		};
+		BC95CDB2230800F100550A9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 533FC52C3999107541A911C4 /* Pods-RubiAppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XNNJ64W9XB;
+				INFOPLIST_FILE = RubiAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shuntanakajima.RubiAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RubiApp.app/RubiApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -435,6 +616,15 @@
 			buildConfigurations = (
 				BC945B872307D88500809452 /* Debug */,
 				BC945B882307D88500809452 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC95CDB3230800F100550A9E /* Build configuration list for PBXNativeTarget "RubiAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC95CDB1230800F100550A9E /* Debug */,
+				BC95CDB2230800F100550A9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
