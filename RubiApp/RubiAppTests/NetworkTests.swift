@@ -7,6 +7,11 @@
 //
 
 import XCTest
+import RxCocoa
+import RxSwift
+
+import ReactorKit
+
 @testable import RubiApp
 
 class NetworkTests: XCTestCase {
@@ -17,6 +22,11 @@ class NetworkTests: XCTestCase {
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+    }
+    
+    func testRequest(){
+        print(Request.requestHiraganaXML(param: ["sentence":"これはテストです"] ))
+        XCTAssertNotNil(Request.requestHiraganaXML(param: ["sentence":"これはテストです"]))
     }
 
 }

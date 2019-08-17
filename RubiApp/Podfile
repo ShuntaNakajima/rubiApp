@@ -13,9 +13,11 @@ target 'RubiApp' do
   pod 'Alamofire', '~> 4.8'
   pod 'PinLayout', '~> 1.8.9'
   pod 'RxAlamofire', '~> 5.0.0'
+
+  target 'RubiAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+  
 end
 
-target 'RubiAppTests' do
-  inherit! :search_paths
-  # Pods for testing
-end
