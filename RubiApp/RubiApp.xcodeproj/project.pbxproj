@@ -15,9 +15,13 @@
 		BC95CD9B2307EEE700550A9E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95CD9A2307EEE700550A9E /* MainViewController.swift */; };
 		BC95CD9D2307F09100550A9E /* MainViewControllerReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95CD9C2307F09100550A9E /* MainViewControllerReactor.swift */; };
 		BC95CDB4230800F900550A9E /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95CDA32307FDEC00550A9E /* NetworkTests.swift */; };
+		BCAB90DE2308FB3D0028CF6D /* NSAttributedString+GetHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB90DD2308FB3D0028CF6D /* NSAttributedString+GetHeight.swift */; };
+		BCAB90E02308FC5A0028CF6D /* UIFont+DefaultFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB90DF2308FC5A0028CF6D /* UIFont+DefaultFonts.swift */; };
+		BCAB90E2230906780028CF6D /* NSAttributedString+joined.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB90E1230906780028CF6D /* NSAttributedString+joined.swift */; };
 		BCAD1DB923080B4F00C264D5 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAD1DB823080B4F00C264D5 /* Request.swift */; };
 		BCAD1DBD2308132800C264D5 /* WordEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAD1DBC2308132800C264D5 /* WordEntity.swift */; };
 		BCAD1DBF23083A1B00C264D5 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAD1DBE23083A1B00C264D5 /* APIKey.swift */; };
+		BCAD1DC52308E0F600C264D5 /* RubyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAD1DC42308E0F600C264D5 /* RubyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,9 +48,13 @@
 		BC95CDA32307FDEC00550A9E /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
 		BC95CDAA230800F100550A9E /* RubiAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RubiAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC95CDAE230800F100550A9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCAB90DD2308FB3D0028CF6D /* NSAttributedString+GetHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+GetHeight.swift"; sourceTree = "<group>"; };
+		BCAB90DF2308FC5A0028CF6D /* UIFont+DefaultFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+DefaultFonts.swift"; sourceTree = "<group>"; };
+		BCAB90E1230906780028CF6D /* NSAttributedString+joined.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+joined.swift"; sourceTree = "<group>"; };
 		BCAD1DB823080B4F00C264D5 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		BCAD1DBC2308132800C264D5 /* WordEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordEntity.swift; sourceTree = "<group>"; };
 		BCAD1DBE23083A1B00C264D5 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		BCAD1DC42308E0F600C264D5 /* RubyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubyView.swift; sourceTree = "<group>"; };
 		C7AF2447810D9B21B8F8FCF0 /* Pods-RubiApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RubiApp.release.xcconfig"; path = "Target Support Files/Pods-RubiApp/Pods-RubiApp.release.xcconfig"; sourceTree = "<group>"; };
 		F035A57545A5C31D5366CF01 /* Pods_RubiApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RubiApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF087A3108CF65D3297616F /* Pods-RubiApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RubiApp.debug.xcconfig"; path = "Target Support Files/Pods-RubiApp/Pods-RubiApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +138,7 @@
 		BC945B8A2307DB4D00809452 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				BCAD1DC12308DFA900C264D5 /* CustomViews */,
 				BC945B8B2307DB5100809452 /* Pages */,
 			);
 			path = UI;
@@ -156,6 +165,7 @@
 		BC95CD9F2307F6D800550A9E /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				BCAD1DC62308FB1100C264D5 /* Extension */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -191,6 +201,24 @@
 				BCAD1DBC2308132800C264D5 /* WordEntity.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		BCAD1DC12308DFA900C264D5 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				BCAD1DC42308E0F600C264D5 /* RubyView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		BCAD1DC62308FB1100C264D5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BCAB90DD2308FB3D0028CF6D /* NSAttributedString+GetHeight.swift */,
+				BCAB90DF2308FC5A0028CF6D /* UIFont+DefaultFonts.swift */,
+				BCAB90E1230906780028CF6D /* NSAttributedString+joined.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,7 +391,11 @@
 				BCAD1DBD2308132800C264D5 /* WordEntity.swift in Sources */,
 				BC945B782307D88400809452 /* AppDelegate.swift in Sources */,
 				BCAD1DB923080B4F00C264D5 /* Request.swift in Sources */,
+				BCAB90E02308FC5A0028CF6D /* UIFont+DefaultFonts.swift in Sources */,
+				BCAB90E2230906780028CF6D /* NSAttributedString+joined.swift in Sources */,
 				BC95CD9B2307EEE700550A9E /* MainViewController.swift in Sources */,
+				BCAD1DC52308E0F600C264D5 /* RubyView.swift in Sources */,
+				BCAB90DE2308FB3D0028CF6D /* NSAttributedString+GetHeight.swift in Sources */,
 				BCAD1DBF23083A1B00C264D5 /* APIKey.swift in Sources */,
 				BC95CD9D2307F09100550A9E /* MainViewControllerReactor.swift in Sources */,
 			);
