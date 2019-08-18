@@ -42,9 +42,9 @@ final class MainViewController: UIViewController, ReactorKit.View {
         inputTextView.layer.borderColor = UIColor.black.cgColor
         inputTextView.layer.cornerRadius = 3.0
         
+        
         doRubyButton.setTitleColor(.white, for: .normal)
         doRubyButton.backgroundColor = .black
-        
         doRubyButton.setTitle("ルビを振る", for: .normal)
         title = "ルビを振りたい文章を入力"
         
@@ -60,6 +60,18 @@ final class MainViewController: UIViewController, ReactorKit.View {
     }
     
     func bind(reactor: MainViewControllerReactor) {
-        
+        doRubyButton.rx.tap.asDriver()
+            .drive(onNext: { _ in
+                if !self.inputTextView.text.isEmpty{
+                    let rubyVC = RubyViewController()
+                    self.navigationController?.pushViewController(rubyVC, animated: true)
+                    rubyVC.fetchRuby(sentence: self.inputTextView.text)
+                }else{
+                    let alert = UIAlertController(title: "エラー", message: "ルビを振りたいを入力してください", preferredStyle: .alert)
+                    let okayButton = UIAlertAction(title: "ok", style: .cancel, handler: nil)
+                    alert.addAction(okayButton)
+                    self.present(alert, animated: true, completion: nil)
+                }
+            }).disposed(by: disposeBag)
     }
 }

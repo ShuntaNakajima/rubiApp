@@ -23,7 +23,6 @@ final class RubyViewControllerReactor: Reactor {
     }
     
     struct State {
-        var kanaStr: String?
         var words: [Word]?
     }
     

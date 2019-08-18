@@ -14,40 +14,11 @@ import RxSwift
 import ReactorKit
 
 final class MainViewControllerReactor: Reactor {
-    enum Action {
-        case getWords(String)
-    }
+    enum Action {}
     
-    enum Mutation {
-        case setKanaWords([Word])
-    }
+    enum Mutation {}
     
-    struct State {
-        var kanaStr: String?
-        var words: [Word]?
-    }
+    struct State {}
     
     var initialState = State()
-    
-    func mutate(action: MainViewControllerReactor.Action) -> Observable<MainViewControllerReactor.Mutation> {
-        switch action {
-        case let .getWords(sentence):
-            return Request.requestHiraganaXML(param: ["sentence":sentence]).map {
-                if let words = $0 {
-                    return Mutation.setKanaWords(words)
-                }
-                return Mutation.setKanaWords([])
-                }
-                .asObservable()
-        }
-    }
-    
-    func reduce(state: MainViewControllerReactor.State, mutation: MainViewControllerReactor.Mutation) -> MainViewControllerReactor.State {
-        var state = state
-        switch mutation {
-        case let .setKanaWords(words):
-            state.words = words
-        }
-        return state
-    }
 }
