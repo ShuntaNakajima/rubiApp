@@ -1,8 +1,8 @@
 //
-//  MainViewControllerReactor.swift
+//  RubyViewControllerReactor.swift
 //  RubiApp
 //
-//  Created by shunta nakajima on 2019/08/17.
+//  Created by shunta nakajima on 2019/08/18.
 //  Copyright © 2019 Shunta Nakajima. All rights reserved.
 //
 
@@ -13,7 +13,7 @@ import RxSwift
 
 import ReactorKit
 
-final class MainViewControllerReactor: Reactor {
+final class RubyViewControllerReactor: Reactor {
     enum Action {
         case getWords(String)
     }
@@ -23,13 +23,12 @@ final class MainViewControllerReactor: Reactor {
     }
     
     struct State {
-        var kanaStr: String?
         var words: [Word]?
     }
     
     var initialState = State()
     
-    func mutate(action: MainViewControllerReactor.Action) -> Observable<MainViewControllerReactor.Mutation> {
+    func mutate(action: RubyViewControllerReactor.Action) -> Observable<RubyViewControllerReactor.Mutation> {
         switch action {
         case let .getWords(sentence):
             return Request.requestHiraganaXML(param: ["sentence":sentence]).map {
@@ -42,7 +41,7 @@ final class MainViewControllerReactor: Reactor {
         }
     }
     
-    func reduce(state: MainViewControllerReactor.State, mutation: MainViewControllerReactor.Mutation) -> MainViewControllerReactor.State {
+    func reduce(state: RubyViewControllerReactor.State, mutation: RubyViewControllerReactor.Mutation) -> RubyViewControllerReactor.State {
         var state = state
         switch mutation {
         case let .setKanaWords(words):
@@ -51,3 +50,4 @@ final class MainViewControllerReactor: Reactor {
         return state
     }
 }
+

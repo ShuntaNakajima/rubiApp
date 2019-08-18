@@ -18,6 +18,8 @@
 		BCAB90DE2308FB3D0028CF6D /* NSAttributedString+GetHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB90DD2308FB3D0028CF6D /* NSAttributedString+GetHeight.swift */; };
 		BCAB90E02308FC5A0028CF6D /* UIFont+DefaultFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB90DF2308FC5A0028CF6D /* UIFont+DefaultFonts.swift */; };
 		BCAB90E2230906780028CF6D /* NSAttributedString+joined.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB90E1230906780028CF6D /* NSAttributedString+joined.swift */; };
+		BCAB90E6230918BF0028CF6D /* RubyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB90E5230918BF0028CF6D /* RubyViewController.swift */; };
+		BCAB90E82309193D0028CF6D /* RubyViewControllerReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB90E72309193D0028CF6D /* RubyViewControllerReactor.swift */; };
 		BCAD1DB923080B4F00C264D5 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAD1DB823080B4F00C264D5 /* Request.swift */; };
 		BCAD1DBD2308132800C264D5 /* WordEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAD1DBC2308132800C264D5 /* WordEntity.swift */; };
 		BCAD1DBF23083A1B00C264D5 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAD1DBE23083A1B00C264D5 /* APIKey.swift */; };
@@ -51,6 +53,8 @@
 		BCAB90DD2308FB3D0028CF6D /* NSAttributedString+GetHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+GetHeight.swift"; sourceTree = "<group>"; };
 		BCAB90DF2308FC5A0028CF6D /* UIFont+DefaultFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+DefaultFonts.swift"; sourceTree = "<group>"; };
 		BCAB90E1230906780028CF6D /* NSAttributedString+joined.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+joined.swift"; sourceTree = "<group>"; };
+		BCAB90E5230918BF0028CF6D /* RubyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubyViewController.swift; sourceTree = "<group>"; };
+		BCAB90E72309193D0028CF6D /* RubyViewControllerReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubyViewControllerReactor.swift; sourceTree = "<group>"; };
 		BCAD1DB823080B4F00C264D5 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		BCAD1DBC2308132800C264D5 /* WordEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordEntity.swift; sourceTree = "<group>"; };
 		BCAD1DBE23083A1B00C264D5 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
@@ -147,8 +151,8 @@
 		BC945B8B2307DB5100809452 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
-				BC95CD9A2307EEE700550A9E /* MainViewController.swift */,
-				BC95CD9C2307F09100550A9E /* MainViewControllerReactor.swift */,
+				BCAB90E42309188E0028CF6D /* RubyViewController */,
+				BCAB90E3230918830028CF6D /* MainViewController */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -185,6 +189,24 @@
 				BC95CDAE230800F100550A9E /* Info.plist */,
 			);
 			path = RubiAppTests;
+			sourceTree = "<group>";
+		};
+		BCAB90E3230918830028CF6D /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BC95CD9A2307EEE700550A9E /* MainViewController.swift */,
+				BC95CD9C2307F09100550A9E /* MainViewControllerReactor.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		BCAB90E42309188E0028CF6D /* RubyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BCAB90E5230918BF0028CF6D /* RubyViewController.swift */,
+				BCAB90E72309193D0028CF6D /* RubyViewControllerReactor.swift */,
+			);
+			path = RubyViewController;
 			sourceTree = "<group>";
 		};
 		BCAD1DBA2308130700C264D5 /* Domain */ = {
@@ -393,7 +415,9 @@
 				BCAD1DB923080B4F00C264D5 /* Request.swift in Sources */,
 				BCAB90E02308FC5A0028CF6D /* UIFont+DefaultFonts.swift in Sources */,
 				BCAB90E2230906780028CF6D /* NSAttributedString+joined.swift in Sources */,
+				BCAB90E6230918BF0028CF6D /* RubyViewController.swift in Sources */,
 				BC95CD9B2307EEE700550A9E /* MainViewController.swift in Sources */,
+				BCAB90E82309193D0028CF6D /* RubyViewControllerReactor.swift in Sources */,
 				BCAD1DC52308E0F600C264D5 /* RubyView.swift in Sources */,
 				BCAB90DE2308FB3D0028CF6D /* NSAttributedString+GetHeight.swift in Sources */,
 				BCAD1DBF23083A1B00C264D5 /* APIKey.swift in Sources */,

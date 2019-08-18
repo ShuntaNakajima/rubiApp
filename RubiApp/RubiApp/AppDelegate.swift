@@ -18,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         let mainVC = MainViewController()
-        window?.rootViewController = mainVC
+        UINavigationBar.appearance().tintColor = .black
+        window?.rootViewController = UINavigationController(rootViewController: mainVC)
         window?.makeKeyAndVisible()
         return true
     }
