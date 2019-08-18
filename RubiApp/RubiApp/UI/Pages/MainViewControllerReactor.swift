@@ -24,6 +24,7 @@ final class MainViewControllerReactor: Reactor {
     
     struct State {
         var kanaStr: String?
+        var words: [Word]?
     }
     
     var initialState = State()
@@ -42,10 +43,10 @@ final class MainViewControllerReactor: Reactor {
     }
     
     func reduce(state: MainViewControllerReactor.State, mutation: MainViewControllerReactor.Mutation) -> MainViewControllerReactor.State {
-        let state = state
+        var state = state
         switch mutation {
         case let .setKanaWords(words):
-            print(words)
+            state.words = words
         }
         return state
     }

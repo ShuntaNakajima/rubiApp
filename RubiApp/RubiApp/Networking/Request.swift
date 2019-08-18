@@ -32,7 +32,6 @@ class Request {
                                        parameters: param,
                                        encoding: URLEncoding.default)
             .asSingle()
-            .debug()
             .map { response, data in
                 let xml = SWXMLHash.parse(data)
                 guard let words:[Word] = try xml["ResultSet"]["Result"]["WordList"]["Word"].value() else {
