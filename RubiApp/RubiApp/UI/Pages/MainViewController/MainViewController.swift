@@ -19,12 +19,14 @@ final class MainViewController: UIViewController, ReactorKit.View {
     
     private let inputTextView = UITextView()
     private let doRubyButton = UIButton()
+    private var keyboardHeight:CGFloat = 0.0
     
     init() {
         defer { self.reactor =  MainViewControllerReactor()}
         super.init(nibName: nil, bundle: nil)
         
         setUpView()
+        setUpKeyBoardNotification()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -52,10 +54,20 @@ final class MainViewController: UIViewController, ReactorKit.View {
         view.addSubview(doRubyButton)
     }
     
+    private func setUpKeyBoardNotification(){
+        let notification = NotificationCenter.default
+        notification.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+    }
+    
+    @objc private func keyboardWillShow(notification: Notification) {
+        guard let rect = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue else { return }
+        keyboardHeight = rect.size.height
+    }
+    
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        inputTextView.pin.width(80%).height(38%).top(view.safeAreaInsets.top + 10).hCenter()
-        doRubyButton.pin.width(60%).height(50).top(to: inputTextView.edge.bottom).marginTop(5).hCenter()
+        doRubyButton.pin.width(60%).height(50).bottom(view.safeAreaInsets.bottom).marginBottom(keyboardHeight + 10).hCenter()
+        inputTextView.pin.width(80%).bottom(to: doRubyButton.edge.top).marginBottom(5).top(view.safeAreaInsets.top + 10).hCenter()
         doRubyButton.layer.cornerRadius = doRubyButton.frame.height / 2
     }
     
