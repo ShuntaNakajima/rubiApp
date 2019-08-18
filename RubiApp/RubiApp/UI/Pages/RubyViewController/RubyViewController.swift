@@ -1,8 +1,8 @@
 //
-//  MainViewController.swift
+//  RubyViewController.swift
 //  RubiApp
 //
-//  Created by shunta nakajima on 2019/08/17.
+//  Created by shunta nakajima on 2019/08/18.
 //  Copyright © 2019 Shunta Nakajima. All rights reserved.
 //
 
@@ -14,14 +14,14 @@ import ReactorKit
 
 import PinLayout
 
-final class MainViewController: UIViewController, ReactorKit.View {
+final class RubyViewController: UIViewController ,ReactorKit.View{
     var disposeBag = DisposeBag()
     
     private let rubyScrollView = UIScrollView()
     private var rubyView = RubyView()
     
     init() {
-        defer { self.reactor =  MainViewControllerReactor()}
+        defer { self.reactor =  RubyViewControllerReactor()}
         super.init(nibName: nil, bundle: nil)
         
         setUpView()
@@ -43,7 +43,7 @@ final class MainViewController: UIViewController, ReactorKit.View {
         rubyScrollView.pin.width(80%).height(30%).top(view.safeAreaInsets.top).hCenter()
     }
     
-    func bind(reactor: MainViewControllerReactor) {
+    func bind(reactor: RubyViewControllerReactor) {
         reactor.action.onNext(.getWords("私は当時やはりこういう記憶ように対して事の時に申しなけれある。"))
         reactor.state.map{ $0.words }
             .observeOn(MainScheduler.instance)
